@@ -1,0 +1,202 @@
+body{
+    font-family:  'Roboto', sans-serif;
+    color:#000;
+    padding: 50px;
+  }
+  
+  h1 ,h2 ,h3 {
+    color:#000;
+  text-transform: uppercase; 
+    }
+  
+    .logo {
+      background: #c5c5c5;
+      border: 1px solid #888888;
+      text-align: center;
+      padding: 20px 0;
+      height: 50px;
+      width: 90px;
+  }
+    nav {
+      background: #c5c5c5;
+      border: 1px solid #888888;
+      text-align: center;
+     float: right;
+     margin-top: -90px;
+      padding: 20px 0;
+      height: 50px;
+      width: 500px;
+    }
+   
+.bar div:last-child,
+.bar div:last-child {
+      height: 35px;
+      width: 1200px;
+      background-color: #ffffff;
+      border: 1px solid #888888;
+    }
+    .bar2 div:last-child,
+.bar2 div:last-child {
+      height: 35px;
+      width: 1200px;
+      background-color: #ffffff;
+      border: 1px solid #888888;
+    }
+    .bar3 div:last-child,
+.bar3 div:last-child {
+      height: 35px;
+      width: 1200px;
+      background-color: #ffffff;
+      border: 1px solid #888888;
+    }
+    .bar4 div:last-child,
+.bar4 div:last-child {
+      height: 35px;
+      width: 1200px;
+      background-color: #ffffff;
+      border: 1px solid #888888;
+    }
+.bar div span {
+      width: 5%;
+      height: 35px;
+      background-color: #c5c5c5;
+      display: inline-block;
+      border-right: 1px solid #888888;   
+          }
+          .bar2 div span {
+            width: 25%;
+            height: 35px;
+      background-color: #c5c5c5;
+      display: inline-block;
+      border-right: 1px solid #888888;   
+          }
+          .bar3 div span {
+            width: 45%;
+            height: 35px;
+      background-color: #c5c5c5;
+      display: inline-block;
+      border-right: 1px solid #888888;   
+          
+          }
+          .bar4 div span {
+            width: 85%;
+            height: 35px;
+      background-color: #c5c5c5;
+      display: inline-block;
+      border-right: 1px solid #888888;   
+          
+          }
+      
+       input {
+        background: #fff;
+        border: 1px solid #9a9a9a;
+        font-size: 1em;
+        height: 2.5em;
+        padding: 0.7em;
+        width: 25%;
+        box-sizing: border-box;
+        
+      
+      }
+
+         select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: #fff;
+          border: 1px solid #9a9a9a;
+          border-radius: 0px;
+         height: 40px;
+          line-height:25px;
+          padding: 10px 10px;
+          width: 25%;
+          box-sizing: border-box;
+          
+         }
+
+          label {
+          display: inline-block;
+           margin-right: 10px;
+          text-align: right;
+          width: 200px;
+          padding: 20px;
+          box-sizing: border-box;
+          }
+          textarea {
+            background: #fff;
+            border: 1px solid #9a9a9a;
+            overflow: auto;
+            resize: none;
+            width: 60%;
+            
+                   }
+    
+.l1 {
+     display: block;
+     text-align: left;
+    margin-right: 10px;
+    text-align: right;
+    
+    
+
+}
+   .tx1{
+     
+      font-size: 12px;
+      font-style: italic;
+      font-weight: normal;
+      text-align: left;
+      padding:20px 15px;
+          
+      
+  }
+  .t1{
+    display: inline-block;
+  }
+  input[type=checkbox]:checked ~ div {
+   display: none;
+   
+  }
+
+  .next {
+    background-color: #D7D7D7;
+    border: 1px solid #9a9a9a;
+    border-radius: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 1.2em;
+    font-weight: 700;
+    height: 4em;
+    padding: 1em;
+    text-align: center;
+    width: 13em;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff;
+  border: 1px solid #9a9a9a;
+  display: inline-block !important;
+  font-size: 1em;
+  height: 2em;
+  padding: 0.8em;
+  vertical-align: middle;
+  width: 2em;
+}
+
+form input[type=radio]:checked {
+  background: #fff;
+  outline: 11px solid #ccc;
+  outline-offset: -1em;
+}
+
+.style .placeholder {
+  background: #f2f2f2;
+  border: 1px solid #9a9a9a;
+  height: 12rem;
+  margin: 0 0 0.5em;
+  width: 12rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

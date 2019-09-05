@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+      
+ }
+
+ main {
+     max-width: 1200px; 
+     margin: 0 auto;
+     display: flex;
+     flex-grow: 1;
+     flex-wrap: wrap;
+     box-sizing: border-box;
+     padding:  5px;    
+ }
+
+ main > * {
+    box-sizing: border-box;
+    padding: 10px;
+    margin:5px;
+}
+ #left-aside {
+     flex: 1 1 200px;
+ }
+
+ #right-aside {
+  flex: 1 1 200px;
+}
+
+section {
+    flex: 4 1 400px;
+}
+
+footer, header {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    position: -webkit-sticky;
+    position: sticky; 
+    bottom : 0;
+    background: white;
+    color: black;
+}
+
+ body * {
+     border: 1px solid #000;
+ }
+
+ /* footer sticky solution for ipad
+ https://gist.github.com/pburtchaell/e702f441ba9b3f76f587 */
+
+ @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+    body {
+      height: 100%;
+    }
+  }
+  @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+    body {
+      height: 100%;
+    }
+  }

@@ -1,0 +1,38 @@
+body
+{
+	margin:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height : 100vh;
+
+}
+#parent
+{
+	border: 2px solid #000 ;
+	border-radius: 5px;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2); 
+	display:flex;
+	width: 500px;
+	height: 200px;
+	transition: all 0.2s;
+
+}
+#parent:hover {
+transform: scale(1.05);
+cursor: pointer;
+}
+.text{
+	padding: 10px;
+	box-sizing: border-box;
+}
+.image
+{
+	margin: 10px;
+
+}
+
+h2{
+	margin: 0 0 10px 0;
+	text-align: center;
+}

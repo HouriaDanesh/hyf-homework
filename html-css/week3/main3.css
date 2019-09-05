@@ -1,0 +1,21 @@
+input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+   
+ }
+ 
+ /* Default State */
+ div {
+    background: green;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+ }
+ 
+ /* Toggled State */
+ input[type=checkbox]:checked ~ div {
+    background: red;
+ }

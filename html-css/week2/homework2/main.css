@@ -1,0 +1,180 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family:  'Roboto', sans-serif;
+  color:#000;
+}
+
+h1 ,h2 ,h3 {
+  color:#000;
+text-transform: uppercase; 
+  }
+
+span{
+  font-size: 1.1em;;
+  color: #969696;
+ 
+}
+
+.mainheader {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #efefef;
+    color: #969696;
+    padding: 2.7em 12.5em 3.5em;
+    box-sizing: border-box;
+    margin: 0;
+      
+}
+
+nav ul{
+  padding: 1.5em 12.5em 1.5em;
+ list-style: none;
+  margin: 0 auto;
+}
+nav ul li{
+  position: relative;
+  display: inline;
+  text-align: center;
+}
+
+nav ul li a {
+ display: inline-block;
+ padding: 7px 15px;
+ text-decoration: none;
+ color:#000;
+  }
+
+ .active {
+    color: #969696;
+  }
+img{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding:  5px;    
+  
+}
+.container > *{
+  box-sizing: border-box;
+  padding: 10px;
+  margin:5px;
+  line-height: 1.5em;
+  color: #919191;
+}
+
+article{
+      flex: 2 1 420px;     
+}
+
+aside { 
+  flex: 1 1 215px;
+  font-size: 0.8em;  
+}
+
+.container ul li{
+  list-style: none;
+}
+.logo img {
+  margin: 2em 2.5rem 3em 0em;
+  width: 110px;
+}
+
+footer{
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+font-size: 16px;
+padding: 20px;
+background-color: #8a2be2;
+color: #fff;
+text-align: center;
+
+}
+
+h4{
+  margin-left:30px;
+}
+.c1 , .c2{
+  width: 25%;
+    
+}
+
+.c1  ul li {
+  flex: 1 1 100px;
+  padding: 0;
+  margin: 20px;
+  list-style: none;
+  line-height: 25px;
+  }
+ .c2 ul li {
+  flex: 1 1 100px;
+  padding: 0;
+  margin: 20px;
+  list-style: none;
+  line-height: 25px;
+  }
+
+.location{
+  width:50%;
+  height: auto;
+}
+
+.c2 ul li
+{
+  padding: 7px;
+  border-bottom: 1px solid #969696;
+}
+
+.c2 li:last-child {
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  .mainheader {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+           
+}
+
+
+nav ul{
+  margin: 0;
+    padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.c1 {
+  width: 100%;
+    
+ 
+}
+.c2{
+  width: 100%;
+ 
+ 
+}
+
+.location{
+  width:50%;
+  height: auto;
+}
+
+ 
+}

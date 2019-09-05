@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+ 
+   <head>
+     
+   <meta charset="utf-8">
+  
+      <title>Project: Travel webpage</title>
+  
+      <style>
+            .head1 { 
+  color: Blue;
+}
+     
+       #list {
+    color: red;
+}
+       
+ </style>
+   
+ </head>
+ 
+   <body>
+    
+
+        <h1>Travel to Autralia</h1>
+   
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Kangaroo_Australia_01_11_2008_-_retouch2.jpg" alt="h2" height="200" width="300" >
+ 
+    <br>
+       
+ <strong class="head1">Things to do:</strong>
+  
+      <ol >
+         
+   <li  id="list">Visit the Botanical garden</li>
+  
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+   
+         <li  id="list">Visit the Naatinal zoo</li>
+   
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+ 
+           <li  id="list">Visit the Nature museum</li>
+   
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+ 
+       </ol>
+   
+ </body>
+</html>

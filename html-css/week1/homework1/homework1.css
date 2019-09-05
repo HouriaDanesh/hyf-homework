@@ -1,0 +1,194 @@
+
+body
+ {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  
+}
+
+
+header {
+  background: url('img/abstract-dark-animated-background-grey-wavy-stripes-on-black-video-graphic-design-hd-1920x1080_42bi1dkhx__F0000.png') no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+
+.container nav {
+   padding: 45px 0 0 0;
+}
+
+.container nav .logo {
+  float: left;
+}
+
+
+.container nav .logo h3 {
+  display: inline-block;
+  color:#FFF;
+  font-size: 1.4em;
+  font-weight: normal;
+  padding: 6px 0 0 10px
+}
+
+.logo img{
+   position: absolute;
+  width: 175px;
+  height: 175px;
+  margin-left: 20px;
+   float: left;
+   border-radius: 50%;
+}
+.container nav ul{
+  list-style: none;
+  float: right;
+  margin: 0 auto;
+}
+.container nav ul li{
+   position: relative;
+   display: inline;
+}
+
+.container nav ul li a {
+  display: inline-block;
+  padding: 7px 15px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+
+.container div.intro {
+  width: 850px;
+  margin: 137px auto;
+  color: #FFF;
+  text-align: center;
+  line-height: 2em;
+}
+
+.portfolio {
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+.portfolio h2 {
+  font-size: 3em;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portfolio li {
+  list-style: none;
+  width: 800px;
+  margin: 20px auto;
+  color: #cdcdcd;
+  line-height: 2em;
+}
+
+
+.education {
+  background: url('img/abstract-dark-animated-background-grey-wavy-stripes-on-black-video-graphic-design-hd-1920x1080_42bi1dkhx__F0000.png') no-repeat 0px -200px;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+}
+
+.education  .container div {
+  padding: 110px 0 0 0;
+}
+
+.education .container h2,li {
+  list-style: none;
+   width: 850px;
+   margin: 20px auto;
+  font-size: 1.2em;
+   text-align: center;
+  line-height: 1em;
+  color: #FFF
+}
+
+
+
+  .myskills {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+  }
+
+  .myskills h2 {
+    font-size: 3em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .myskills > p {
+    width: 800px;
+    margin: 20px auto;
+    color: #cdcdcd;
+    line-height: 2em
+  }
+
+  .myskills .container .leftskills {
+    float: left;
+  }
+
+ 
+
+  .myskills .container .leftskills .technique h3,
+  .myskills .container .rightskills .technique h3 {
+    text-align: left;
+    text-transform: uppercase;
+    float: left;
+    display: inline-block;
+  }
+
+  .myskills .container .leftskills .technique h5,
+  .myskills .container .rightskills .technique h5 {
+    text-align: right;
+    float: right;
+    display: inline-block;
+  }
+
+  .myskills .container .leftskills .technique ,
+  .myskills .container .rightskills .technique  {
+    width: 500px;
+    margin-bottom: 40px;
+    height: 22px;
+    background-color: #484848;
+    margin-top: 12px;
+    border-radius: 3px;
+  }
+
+  
+
+  .myskills .container .rightskills {
+    float: right;
+  }
+
+
+footer {
+  background-color: #343434;
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+
+footer .container .copyRights {
+  float: left;
+}
+
+footer .container .copyRights p{
+  color: #FFF;
+}
+
+footer .container .copyRights p a{
+  text-decoration: none;
+  color: #03a9f4;
+  font-weight: bold;
+  font-size: .8em;
+}

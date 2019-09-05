@@ -1,0 +1,52 @@
+body,
+html, * {
+    margin: 0;
+    padding : 0;
+}
+
+#container {
+    width: 86%;
+    margin : 0 auto;
+    text-align: center;
+}
+
+#container > * {
+    margin-top: 20px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+#nav li:hover {
+    background: lightgrey;
+    -webkit-transition: all 0.25s;
+    /* Safari prior 6.1 */
+}
+
+#nav li:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav li:not(:last-child) {
+        border: 0;
+        border-bottom: 2px solid black;
+    }
+
+}
