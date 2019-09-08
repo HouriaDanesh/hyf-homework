@@ -24,7 +24,7 @@ else {
 //const width[8,15]
 //const depth[10,11)
 //const height= [10,8]
-//let volum[M] = []
+//const volum[M] = []
 // VolumM.push(widt[0] * depth[0] * height[0]);
 // VolumM.push(widt[1] * depth[1] * height[1]);
 //console.log(VolumM);
