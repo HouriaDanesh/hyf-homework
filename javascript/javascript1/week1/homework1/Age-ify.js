@@ -5,3 +5,6 @@ console.log("You will be " + age + " years old in " + yearFuture);
 
 //string literals
 console.log(`You will be ${age} years old in ${yearFuture}`);
+
+//or
+console.log(`You will be ${yearFuture - yearOfBirth} years old in ${yearFuture}`);
