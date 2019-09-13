@@ -35,7 +35,7 @@ function canBuyMoreCandy()
     return totalPrice;
 }
 
-if(canBuyMoreCandy()) {
+if(canBuyMoreCandy() < amountToSpend) {
     console.log("You can buy more, so please do!"); 
    
   }
