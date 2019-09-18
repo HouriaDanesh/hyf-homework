@@ -14,5 +14,5 @@ const travelInformation = {
 
  return (`Travel time will be :hours ${timeInHours} and ${timeInMinutes} minutes`);         
  }
-  console.log(travelTime()); // 4 hours and 42 minutes
+  console.log(travelTime()); // 8 hours and 38 minutes
   
