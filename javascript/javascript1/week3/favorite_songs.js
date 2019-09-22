@@ -21,7 +21,9 @@ const songDatabase = [{
     artist: 'The spies girls',
   },
 ];
-
+// define another function that can not accept the same id
+//function addSongToDatabase(title, artist){
+//if(typeof(title) === 'string
 const myPlaylist =[]; 
 
 function addSongToDatabase (song){
@@ -42,6 +44,18 @@ addSongToDatabase({
     console.log(songDatabase);
 
 //Searching for a song
+
+//This way is not that good because another one is faster 
+//function getSongByTitle (title)
+//{
+//const title =[];
+//    for (let i = 0 ; i < songDatabase.length ; i++){
+//tilte.push(songDatabase[i].title)}
+//const idx = title.indexof(title)
+//return songDatabase[idx]
+//}
+//const searchSong = getSongByTitle
+//console.log(searchedSong); 
 
 function getSongByTitle (title)
 {
