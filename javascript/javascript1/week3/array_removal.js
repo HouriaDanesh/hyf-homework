@@ -2,13 +2,13 @@ const names = ['Peter', 'Ahmad', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrin
 const nameToRemove = 'Ahmad';
 
 // Write some code here
-for(let i=0 ; i<names.length; i++){
+//for(let i=0 ; i<names.length; i++){
 
-    if(names[i] == nameToRemove){
-
-       names.splice(i, 1);
-}
-}
+  //  if(names[i] === nameToRemove){
+        const idx = name.indexof(nameToRemove);
+        names.splice(idx , 1);
+//}
+//}
 
 // Code done
 
