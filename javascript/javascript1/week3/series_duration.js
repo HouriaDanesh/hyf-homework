@@ -25,20 +25,20 @@ const seriesDurations = [
   // 1year = 525600min;
 // 1day = 1440 min;
 //1hours =60min;
-function calculateDuration(){
+function calculateDuration(seriesDurations){
 
   const AvgLife = 80;
-  const YearsInMin= AvgLife * 525600;
+  const YearsInMin= AvgLife * 525600;  //365*24*60
 
   sum = 0;  
   for (let i = 0; i<seriesDurations.length ; i++)
   {
-    const daysInMinute = seriesDurations[i].days * 1440;
+    const daysInMinute  = seriesDurations[i].days * 1440; //24*60
     const hoursInMinute = seriesDurations[i].hours * 60;
    
-    const TotalMinutes = daysInMinute + hoursInMinute + seriesDurations[i].minutes;
+    const TotalMinutes  = daysInMinute + hoursInMinute + seriesDurations[i].minutes;
    
-    const Percentage = (TotalMinutes/YearsInMin) * 100;
+    const Percentage    = (TotalMinutes/YearsInMin) * 100;
 
     console.log(`The ${seriesDurations[i].title} series took ${Percentage.toFixed(3)}% of my life`);  
 
@@ -50,7 +50,7 @@ function calculateDuration(){
 console.log(`In total that is ${sum.toFixed(2)}% of my life`);
 }
 
-calculateDuration();
+calculateDuration(seriesDurations);
 
 //  Game of thrones took 0.01% of my life
 //Sopranos took 0.012% of my life
