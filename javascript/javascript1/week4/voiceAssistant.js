@@ -1,7 +1,6 @@
 const name = [];
 const todoList = [];
 const favouriteDish = [];
-const eventCalender = [];
 const num=[];
 
 // Greetings(Nive to meet you Houria)
