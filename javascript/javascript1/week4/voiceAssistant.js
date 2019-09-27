@@ -73,7 +73,7 @@ else if (command.includes('dish'))
 else if(command.includes('favourite'))
     {
     favouriteDish.splice(4, 1, "carbonara");
-    return `Saved favorite dish as ${favDishList}`;
+    return `Saved favorite dish as ${favouriteDish}`;
     } 
     
 //timer
