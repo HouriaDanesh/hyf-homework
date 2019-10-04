@@ -41,10 +41,14 @@ function getAvailableProducts() {
 
 const parent = document.querySelector("section.products > ul");
 function renderProducts(products) {
-products.forEach(function() {
     const li = document.createElement("li");
-    li.textContent = products.name;
-    parent.appendChild(li);
+        parent.appendChild(li);
+
+products.forEach(function() {
+        const subli = document.createElement('li')
+    subli.textContent = products[i].name
+    subul.appendChild(subli)
+
  });
 }
 
