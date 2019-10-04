@@ -11,7 +11,7 @@ renderProducts(testProductNames); // Should add 3 li's to the ul under the produ
 
 let parent = document.querySelector("ul");
 
-function createList(parent, testProductNames)
+function renderProducts(parent, testProductNames)
  {
     array.forEach(function () 
     {
