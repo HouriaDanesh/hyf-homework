@@ -1,5 +1,5 @@
-//console.log("Script loaded");
-//const testProductNames = ["Flat screen", "Mobile phone", "Wallet"];
+console.log("Script loaded");
+ const testProductNames = ["Flat screen", "Mobile phone", "Wallet"];
 
 function getAvailableProducts() {
     return [{
@@ -24,8 +24,7 @@ function getAvailableProducts() {
         shipsTo: ['Denmark']
        }]
   }
-  const products = getAvailableProducts();
-  console.log(products); // logs out
+
   /*
   [{
       id: 23771823,
@@ -39,16 +38,31 @@ function getAvailableProducts() {
   
 //renderProducts(testProductNames); // Should add 3 li's to the ul under the products section with Flat screen, Mobile phone, Wallet text
 
-const parent = document.querySelector("section.products > ul");
-function renderProducts(products) {
-    const li = document.createElement("li");
-        parent.appendChild(li);
+const products = getAvailableProducts();
+ console.log(products); // logs out
+ console.log(renderProducts(products));
 
-products.forEach(function() {
-        const subli = document.createElement('li')
-    subli.textContent = products[i].name
-    parent.appendChild(subli)
 
- });
-}
+   function renderProducts(product) {
+    const ul = document.querySelector("section.products > ul");
+    
+    products.forEach(function(product) {
 
+    const nameLi = document.createElement("li");
+    nameLi.innerText = product.name;
+    ul.appendChild(nameLi);
+  
+    const priceLi = document.createElement("li");
+    priceLi.innerText = product.price;
+    ul.appendChild(priceLi);
+  
+    const ratingLi = document.createElement("li");
+    ratingLi.innerText = product.rating;
+    ul.appendChild(ratingLi);
+  
+    const shipsToLi = document.createElement("li");
+    shipsToLi.innerText = product.shipsTo;
+    ul.appendChild(shipsToLi);
+    });
+    return ul;
+  }
