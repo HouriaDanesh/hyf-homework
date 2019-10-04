@@ -47,7 +47,7 @@ function renderProducts(products) {
 products.forEach(function() {
         const subli = document.createElement('li')
     subli.textContent = products[i].name
-    subul.appendChild(subli)
+    parent.appendChild(subli)
 
  });
 }
