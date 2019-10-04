@@ -1,5 +1,5 @@
 console.log("Script loaded");
- const testProductNames = ["Flat screen", "Mobile phone", "Wallet"];
+ //const testProductNames = ["Flat screen", "Mobile phone", "Wallet"];
 
 function getAvailableProducts() {
     return [{
