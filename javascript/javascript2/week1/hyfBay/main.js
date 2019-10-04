@@ -43,7 +43,7 @@ const parent = document.querySelector("section.products > ul");
 function renderProducts(products) {
 products.forEach(function() {
     const li = document.createElement("li");
-    li.textContent = testProductNames;
+    li.textContent = products.name;
     parent.appendChild(li);
  });
 }
