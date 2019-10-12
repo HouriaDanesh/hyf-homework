@@ -70,18 +70,6 @@ const products = getAvailableProducts();
 console.log(products); // logs out
 console.log(renderProducts(products));
 
-search.addEventListener("input", searchTab);
-
-function searchTab() {
-  const search = document.querySelector("input");
-  const searchedProduct = testProductNames.filter(function searchProduct(product){
-    product.name.includes(search.value)
-
-  });
-  const productList = document.getElementById("products");
-  const myUl = document.createElement("ul");
-  renderProducts(searchedProduct);
-}
 
 function renderProducts(product) {
   const ul = document.querySelector("section.products > ul");
@@ -102,10 +90,25 @@ function renderProducts(product) {
     const shipsToLi = document.createElement("li");
     shipsToLi.innerText = product.shipsTo;
     ul.appendChild(shipsToLi);
+
+    const country = document.createElement("li");
+    countryToLi.innerText = product.country;
+        ul.appendChild(country);
   });
   return ul;
 }
-//////////////////////////////////////////////////////////////
+
+const search = document.querySelector("input");
+search.addEventListener("input", searchTab);
+
+function searchTab() {
+  const searchedProduct = testProductNames.filter(function searchProduct(product){
+    product.name.includes(search.value)
+
+  });
+  renderProducts(searchedProduct);
+
+/////////////////////////////////////////////////////////////
 
 // function renderProducts(array) {
 //   for (let i = 0; i < array.length; i++) {
