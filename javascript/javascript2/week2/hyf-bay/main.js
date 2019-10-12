@@ -1,29 +1,3 @@
-// console.log('Script loaded');
-
-// const products = getAvailableProducts();
-// const productsUl = document.querySelector('section.products ul');
-// console.log(productsUl);
-
-// function renderProducts(products) {
-//     products.forEach(product => {
-//         const li = document.createElement('li');
-
-//         const shipsToHTML = product.shipsTo.reduce((acc, country) => `<li>${acc}</li><li>${country}</li>`);
-
-//         li.innerHTML = `
-//             <ul>
-//                 <li>${product.name}</li>
-//                 <li>${product.price}</li>
-//                 <li>${product.rating}</li>
-//                 <ul class="ships-to">${shipsToHTML}</ul>
-//             </ul>
-//         `;
-//         productsUl.appendChild(li);
-//     });
-// }
-
-// renderProducts(products);
-
 console.log("Script loaded");
 const testProductNames = ["Flat screen", "Mobile phone", "Wallet"];
 
@@ -53,19 +27,6 @@ function getAvailableProducts() {
   ];
 }
 
-/*
-  [{
-      id: 23771823,
-      name: 'Flat screen',
-      price: 4000,
-      rating: 4.2,
-      shipsTo: [ 'denmark', 'germany'],
-  },
-  ...]
-  */
-
-//renderProducts(testProductNames); // Should add 3 li's to the ul under the products section with Flat screen, Mobile phone, Wallet text
-
 const products = getAvailableProducts();
 console.log(products); // logs out
 console.log(renderProducts(products));
@@ -88,12 +49,17 @@ function renderProducts(product) {
     ul.appendChild(ratingLi);
 
     const shipsToLi = document.createElement("li");
+    const shippingListUl = document.createElement("ul");
+
     shipsToLi.innerText = product.shipsTo;
     ul.appendChild(shipsToLi);
-
-    const country = document.createElement("li");
-    countryToLi.innerText = product.country;
-        ul.appendChild(country);
+    const shipingItems = product.shipsTo;
+    for (let i = 0; i < product.shipsTo.length; i++) {
+    const countryToLi = document.createElement("li");
+    countryToLi.innerText = shipingItems[i];
+        shippingListUl.appendChild(countryToLi);
+    }
+    ul.appendChild(shippingListUl)
   });
   return ul;
 }
