@@ -68,12 +68,12 @@ const search = document.querySelector("input");
 search.addEventListener("input", searchTab);
 
 function searchTab() {
-  const searchedProduct = testProductNames.filter(function searchProduct(product){
+  const searchedProduct = products.filter(function searchProduct(product){
     product.name.includes(search.value)
 
   });
   renderProducts(searchedProduct);
-
+}
 /////////////////////////////////////////////////////////////
 
 // function renderProducts(array) {
@@ -94,4 +94,4 @@ function searchTab() {
 
 //     productLi.appendChild(renderProduct(product));
 //   }
-// }
+
