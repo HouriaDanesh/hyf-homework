@@ -6,12 +6,12 @@ moveElement(document.querySelector('ul.marks li:nth-child(1)'), {x: 20, y: 300})
         console.log('Red circle has been moved');
     });
 
-    moveElement(document.querySelector('ul.marks li:nth-child(2)'), {x: 400, y: 300})
+    .then(() => moveElement(document.querySelector('ul.marks li:nth-child(2)'), {x: 400, y: 300})
     .then(() => {
         console.log('blue circle has been moved');
     });
 
-    moveElement(document.querySelector('ul.marks li:nth-child(3)'), {x: 400, y: 20})
+    .then(() => moveElement(document.querySelector('ul.marks li:nth-child(3)'), {x: 400, y: 20})
     .then(() => {
         console.log('Green circle has been moved');
     });
