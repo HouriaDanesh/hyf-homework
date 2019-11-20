@@ -3,11 +3,10 @@ Use hyf_db_lesson1;
 describe task;
 select count(id) 
 from task
-order by id;
 -- 2.Find out how many tasks in the task table do not have a valid due date--
 select id , title
 from task
-where due_date = null;
+where due_date is null;
 -- 3.Find all the tasks that are marked as done--
 Select task.title, status.name
 From task 
@@ -36,13 +35,13 @@ from task
 inner join status 
 on task.status_id = status.id; 
 -- 9.Get the name of each status, along with a count of how many tasks have that status--
-select status.name , count(task.id)
+select status.name , count(task.status_id)
 from task
 inner join status 
 on task.status_id = status.id
 group by status.id;
 -- 10.Get the names of all statuses, sorted by the status with most tasks first--
-select status.name , task.title
+select status.name , count(task.status_id), task.title
 from task
 inner join status
 on task.status_id = status.id
