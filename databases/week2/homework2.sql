@@ -20,5 +20,8 @@ CREATE TABLE `student` (
   CONSTRAINT `fk_class`FOREIGN KEY (`class_id`) REFERENCES `class` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- Create an index on the name column of the student table. 
+CREATE INDEX student_name ON student (`name`); 
 
-
+-- add new column to table Class 
+ALTER TABLE Class ADD COLUMN new_column INTEGER DEFAULT 0;
