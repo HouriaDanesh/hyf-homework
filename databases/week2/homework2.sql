@@ -24,4 +24,4 @@ CREATE TABLE `student` (
 CREATE INDEX student_name ON student (`name`); 
 
 -- add new column to table Class 
-ALTER TABLE Class ADD COLUMN new_column INTEGER DEFAULT 0;
+ALTER TABLE Class ADD status enum('not-started', 'ongoing', 'finished') not null default'not-started';
