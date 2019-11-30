@@ -5,7 +5,7 @@ CREATE TABLE `meal` (
     `title` VARCHAR(255) NOT NULL,
     `description` TEXT,
     `location` VARCHAR(255) NOT NULL,
-    `when` DATETIME NOT NULL,
+    `which_date` DATETIME NOT NULL,
     `max_reservations` INT NOT NULL,
     `price` DECIMAL NOT NULL,
     `created_date` DATE NOT NULL,
